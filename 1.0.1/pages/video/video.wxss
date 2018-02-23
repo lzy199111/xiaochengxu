@@ -1,0 +1,29 @@
+/* pages/video/video.wxss */
+#video{
+  width: 100%;
+}
+.viedo-text{
+  padding: 40rpx 0 40rpx 0;
+  border-bottom: 1px solid #eaeaea;
+  font-size: 20px;
+}
+.videoCont{
+  padding: 0 30rpx;
+  width: 100%;
+  background-color: #fff;
+  box-sizing: border-box;
+}
+.index-bottom{
+  margin-top: 100rpx;
+  padding-top:40rpx;
+  line-height: 64rpx;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  color: #333;
+  font-size: 32rpx;
+}
+.index-bottom .active{
+  color: #3d5cd8;
+  font-size: 48rpx;
+}

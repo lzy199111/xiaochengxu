@@ -1,0 +1,61 @@
+<!--pages/login/login.wxml-->
+<view class="swiperCont">
+  <view class="login-icon">
+    <image class="login-img" src="{{loginLog}}"></image>
+  </view>
+  <view class="swiper-tab">
+    <view class="swiper-tab-list {{currentTab==0 ? 'on' : ''}}" data-current="0" bindtap="swichNav">登录</view>
+    <view class="swiper-tab-list {{currentTab==1 ? 'on' : ''}}" data-current="1" bindtap="swichNav">注册</view>
+  </view>
+  <swiper current="{{currentTab}}" class="swiper-box" duration="300" bindchange="bindChange">
+    <swiper-item>
+      <view class="login-from">
+        <!--账号-->
+        <view class="inputView">
+          <image class="nameImage" src="../../images/name.png"></image>
+          <label class="loginLab">账号</label>
+          <input class="inputText" type='number' placeholder="请输入手机号" bindinput="phoneInput" />
+        </view>
+
+        <!--密码-->
+        <view class="inputView">
+          <image class="keyImage" src="../../images/key.png"></image>
+          <label class="loginLab">密码</label>
+          <input class="inputText" password="true" placeholder="请输入密码" bindinput="passwordInput" />
+        </view>
+
+        <!--按钮-->
+        <view class="loginBtnView">
+          <button class="loginBtn" type="default" size="{{primarySize}}" disabled="{{disabled}}" bindtap="login">登录</button>
+          <view class='wj-pass' catchtap='forget'>忘记密码</view>
+        </view>
+      </view>
+    </swiper-item>
+    <swiper-item>
+      <view class="login-from">
+        <!--手机号-->
+        <view class="inputView-zhuce">
+          <image class="nameImage" src="../../images/name.png"></image>
+          <input class="inputText-zhuce" placeholder="请输入手机号" bindinput="phoneInputReg" /> 
+        </view>
+
+        <!--验证码-->
+        <view class="inputView-zhuce">
+          <image class="keyImage" src="../../images/key.png"></image>
+          <input class="inputText-zhuce" type='number' password="true" placeholder="请输入验证码" bindinput="jiaoyanInput" />
+          <label class="loginLab obtain {{activeCl?'activ':''}}" bindtap='jiaoyan'>{{yanzheng}}</label>
+        </view>
+        <!--密码-->
+        <view class="inputView-zhuce">
+          <image class="keyImage" src="../../images/key.png"></image>
+          <input class="inputText-zhuce" password="true" placeholder="请输入密码" bindinput="passwordInputReg" />
+        </view>
+
+        <!--按钮-->
+        <view class="loginBtnView">
+          <button class="loginBtn" type="default" size="{{primarySize}}" disabled="{{disabled}}" bindtap="register">注册</button>
+        </view>
+      </view>
+    </swiper-item>
+  </swiper>
+</view>

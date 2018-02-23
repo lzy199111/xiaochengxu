@@ -1,0 +1,42 @@
+/* pages/revise/revise.wxss */
+.revise{
+  width: 100%;
+  border-top: 1px solid #eaeaea;
+  
+  background-color: #fff;
+}
+.section{
+  width: 100%;
+  box-sizing: border-box;
+  padding: 40rpx;
+  border-bottom: 1px solid #eaeaea;
+}
+.section input{
+  width: 100%;
+  font-size: 28rpx;
+  height: 60rpx;
+}
+.sectionCode{
+    display: flex;
+}
+.sectionCode input{
+  width: 65%;
+}
+.loginLab{
+  width: 30%;
+  font-size: 14px;
+  height: 60rpx;
+  line-height: 60rpx;
+  padding-left: 4%;
+  border-left: 1px solid #3d5cd8
+}
+.btn{
+  width: 100%;
+  background-color: #fff;
+}
+.btn button{
+width: 80%;
+ background: linear-gradient(to right,#6a9ff8, #3d5cd8);
+ color: #fff;
+ margin-top: 300rpx;
+}

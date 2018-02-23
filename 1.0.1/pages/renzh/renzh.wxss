@@ -1,0 +1,33 @@
+/* pages/revise/revise.wxss */
+.revise{
+  width: 100%;
+  border-top: 1px solid #eaeaea;
+  background-color: #fff;
+}
+.section{
+  width: 100%;
+  padding: 40rpx;
+  border-bottom: 1px solid #eaeaea;
+}
+.section input{
+  width: 100%;
+  font-size: 28rpx;
+  height: 60rpx;
+}
+.btn{
+  width: 100%;
+  background-color: #fff;
+}
+.btn button{
+width: 80%;
+ background: linear-gradient(to right,#6a9ff8, #3d5cd8);
+ color: #fff;
+ margin-top: 150rpx;
+}
+.messText{
+  display: block;
+  font-size: 14px;
+  color: #666;
+  padding: 10px 0;
+  text-align: center;
+}

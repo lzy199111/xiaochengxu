@@ -1,0 +1,8 @@
+/* pages/news-detail/news-detail.wxss */
+@import "../templast-list/templast-list.wxss";
+.detail{
+  width: 100%;
+  padding: 0 40rpx;
+  background-color: #fff;
+  box-sizing: border-box;
+}

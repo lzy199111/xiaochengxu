@@ -1,0 +1,10 @@
+/* pages/shouce/shouce.wxss */
+page{width: 100%;height: 100%;}
+swiper{
+  width: 100%;
+  height: 100%;
+}
+.slide-image{
+  width: 100%;
+  height: 100%;
+}

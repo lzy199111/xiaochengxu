@@ -1,0 +1,20 @@
+<!--pages/set/set.wxml-->
+<view class="container">
+  <view class="set">
+    <view class="set-list" bindtap="revise">
+      <text>修改登录密码</text>
+      <text> > </text>
+    </view>
+    <view class="set-list" bindtap="fankui">
+      <text>意见反馈</text>
+      <text> > </text>
+    </view>
+    <view class="set-list" bindtap='tuijian'>
+      <text>推荐好友</text>
+      <text> > </text>
+    </view>
+  </view>
+  <view class="btn"><button type="default" size="default" bindtap="out"> 退出登录 </button></view>
+  
+
+</view>

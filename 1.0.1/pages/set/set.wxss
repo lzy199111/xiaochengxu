@@ -1,0 +1,25 @@
+/* pages/set/set.wxss */
+.set{
+  width: 100%;
+  border-top: 1px solid #eaeaea;
+  font-size: 18px;
+  color: #999
+}
+.set-list{
+  width: 90%;
+  border-bottom: 1px solid #eaeaea;
+  padding: 50rpx 40rpx;
+  display: flex;
+  justify-content: space-between;
+  background-color: #fff;
+}
+.btn{
+  width: 100%;
+  background-color: #fff;
+}
+.btn button{
+width: 80%;
+ background: linear-gradient(to right,#6a9ff8, #3d5cd8);
+ color: #fff;
+ margin-top: 300rpx;
+}

@@ -1,0 +1,33 @@
+<!--pages/buju/buju.wxml-->
+<view class="container">
+  <view class="buju">
+    <view class="banner">
+      <image src="{{bannerSrc}}"></image>
+    </view>
+    <view class="bujucont">
+      <view class="cont-title">公司实拍</view>
+      <view class="shipai"><image src="{{shipai.shipaiSrc}}"></image></view>
+      <view class="shipaiList">
+        <image src="{{item}}" wx:for="{{shipai.shipaiList}}" wx:key="key"></image>
+      </view>
+    </view>
+    <view class="bujucont">
+      <view class="cont-title">全国城市范围</view>
+      <view class="cityMap"><image src="{{mapSrc}}"></image></view>
+      <text class="course">
+      注：截止2017年11月最新消息近期乾晟资产正在持续
+      开设新的服务区域以预约界面中城市更新信息为准</text>
+    </view>
+    <view class="bujucont">
+      <view class="cont-title">点击城市查看地址</view>
+      <view class="cityList">
+        <view class="listBtn" bindtap='lookcity' data-id="{{item.id}}" wx:for="{{cityList}}" wx:key=""key>{{item.city}}</view>
+      </view>
+      <view class="lianxi">
+        <text class="big-text">预约电话：400-061-5801</text>
+        <text>服务时间：9：00-18：00（若不在服务时间，请您选择在线预约）</text>
+      </view>
+      <view class="btn"><button bindtap='liji' type="default" size="default">立即预约 >></button></view>
+    </view>
+  </view>
+</view>

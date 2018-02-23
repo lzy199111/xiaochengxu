@@ -1,0 +1,35 @@
+<!--index.wxml-->
+<view class="container">
+  <!-- <view class="search">
+    <icon type="search" class="search-img" size="13" color="#405f80" />
+    <input type="text" placeholder="搜索产品名称" class="searchInput" />
+  </view> -->
+  <view class="product" data-pro_id="{{item.pro_id}}" wx:for="{{productHot}}" wx:key="key" catchtap='details'>
+    <view class="product-cont">
+      <image class="productBg" wx:if="{{item.image!=''}}" src="{{item.image}}"></image>
+      <view class="product-inner-top">  
+        <text class="product-name">{{item.pro_name}}</text>
+         <view class="delayTime">{{item.zhuangtai}}</view> 
+      </view>
+      <view class="product-inner-bottom">
+        <view class="product-num">
+          <view class="product-num-list">
+            <text>业绩基准</text>
+            <view>{{item.yeji_jizuhn}}</view>          
+          </view>
+          <view class="product-num-list">
+            <text>产品期限</text>
+            <view>{{item.store_time}}</view>          
+          </view>
+          <view class="product-num-list">
+            <text>剩余额度</text>
+            <view><text class="active">{{item.last_collect}}</text> 万</view>      
+          </view>
+        </view>
+      </view>
+    </view>
+  </view>
+
+
+
+</view>

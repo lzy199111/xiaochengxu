@@ -1,0 +1,9 @@
+<!--pages/fankui/fankui.wxml-->
+<view class="cont">
+   <view class="section">
+    <textarea name="textarea" placeholder="请写下您的建议或意见，对于有价值的反馈我们将会给予积分奖励！(至少5个字）" bindinput='textInput' auto-focus="true" placeholder-style="font-size:28rpx;"/>
+   </view>
+  <view class="btn-area">
+    <button bindtap='formSubmit'>提交</button>
+  </view>
+</view>

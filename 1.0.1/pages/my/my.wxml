@@ -1,0 +1,136 @@
+<!--pages/my/my.wxml-->
+<view class="container">
+  <view class="my">
+    <view class="myTop" wx:if="{{message!=null}}">
+      <view class="set" bindtap="set"><image src='../../images/set.png'></image></view>
+      <image class="banner" src="{{topBanner}}"></image>
+      <view class="section">
+
+        <view class="messageTop">
+          <view class="logoCont"><image class="logo" src="{{logo}}"></image></view>
+          <view class="vip">
+            <view>
+              <text>{{message.level!=undefined?message.level+'会员':'已登录'}}</text>
+              <image class="vipImg" wx:if="{{message.level!=undefined}}" src="{{'https://app.chainson-asset.com/Public/Uploads/resource/3.0/'+message.level+'.png'}}"></image>
+            </view>
+            <text class='renzh' data-status="{{message.status=='yes'?'已认证':'点击认证'}}" bindtap='renzh'>{{message.status=="yes"?"已认证":"点击认证"}}</text>
+            
+          </view>
+          <view class="chakan" catchtap="lookMore" data-vipname="{{message.level}}">查看会员权益 ></view>
+        </view>
+        <view class="message">
+          <view class="mess-list">
+            <text class="mess-list-text">再投总额</text>
+            <text wx:if="{{message.adviser!=null}}">{{message.amounts}}</text>
+            <text class='rzText' wx:elif="{{message.amounts==null}}">请认证</text>
+          </view>
+          <view class="mess-list">
+            <text class="mess-list-text">我的积分</text>
+            <text wx:if="{{message.points!=null}}">{{message.points}}</text>
+            <text class='rzText' wx:elif="{{message.points==null}}">请认证</text>
+          </view>
+          <view class="mess-list">
+            <text class="mess-list-text">我的顾问</text>
+            <text wx:if="{{message.adviser!=null}}">{{message.adviser.name}}</text>
+            <text class='rzText' wx:elif="{{message.adviser==null}}">请认证</text>
+          </view>
+        </view>
+      </view>
+    </view>
+    <!--未登录显示样式  -->
+    <view class="myTop"  wx:if="{{message==null}}">
+      <view class="set" bindtap="set"><image src='../../images/set.png'></image></view>
+      <image class="banner" src="{{topBanner}}"></image>
+      <view class="section">
+        <view class="messageTop-wu">
+          <view class="logoCont"><image class="logo" src="{{logo}}"></image></view>
+          <view class="vip-wu" catchtap='login'>
+            <text>点击登录/注册</text>
+          </view>
+        </view>
+        <view class="message">
+          <view class="mess-list">
+            <text class="mess-list-text">再投总额</text>
+            <text>无</text>
+          </view>
+          <view class="mess-list">
+            <text class="mess-list-text">我的积分</text>
+            <text>无</text>
+          </view>
+          <view class="mess-list">
+            <text class="mess-list-text">我的顾问</text>
+            <text>无</text>
+          </view>
+        </view>
+      </view>
+    </view> 
+
+
+
+    <!--//////////////  -->
+    <view class="assets">
+      <view class="common-header">
+        <text>我的投资</text>
+      </view>
+      <view class="assets-cont" wx:if="{{product.length==0}}">
+        <text class="tip">暂无资产，您可以：</text>
+        <text class="look" bindtap='lookOther'>看看“冶建启航1号”系列产品</text>
+      </view>
+      <view class="asset-show" wx:if="{{product.length!=0}}">
+        <view class="asset-show-inner" wx:for="{{product}}" wx:key="key" data-pro_id="{{item.pro_id}}">
+        <view class="prodct-name">{{item.pro_name}}</view>
+        <view class="product-mess">
+          <view class="product-mess-tit">
+            <text class="hui">投资金额</text>
+            <text>{{item.invest_price}}万元</text>
+          </view>
+          <view class="product-mess-tit">
+            <text class="hui">到期日</text>
+            <text>{{item.arrive_date}}</text>
+          </view>
+        </view>
+      </view>  
+      </view>
+    </view>
+    <!--///////////  -->
+    <view class="prod">
+      <view class="common-header">
+        <text>感兴趣的产品</text>
+      </view>
+      <view class="assets-cont" wx:if="{{prodinter.length==0}}">
+        <text class="tip">未添加产品：</text>
+        <text class="look" bindtap='lookOther'>看看“冶建启航1号”系列产品</text>
+      </view>
+      <view class="product" wx:if="{{prodinter.length!=0}}">
+        <view class="product-cont" wx:for="{{prodinter}}" wx:key="key" data-pro_id='{{item.pro_id}}' catchtap='lookDetail'>
+          <image class="productBg" src="{{item.image}}"></image>
+          <view class="product-inner-top">  
+            <text class="product-name">{{item.pro_name}}</text>
+            <view class="delayTime">{{item.zhuangtai}}</view>
+          </view>
+          <view class="product-inner-bottom">
+            <view class="product-num">
+              <view class="product-num-list">
+                <text>业绩基准</text>
+                <view>{{item.yeji_jizuhn}}</view>          
+              </view>
+              <view class="product-num-list">
+                <text>产品期限</text>
+                <view>{{item.store_time}}</view>          
+              </view>
+              <view class="product-num-list">
+                <text>剩余额度</text>
+                <view><text class="active">{{item.last_collect}}</text> 万</view>      
+              </view>
+            </view>
+          </view>
+      </view>
+    </view>
+
+    </view>
+
+
+
+
+  </view>
+</view>

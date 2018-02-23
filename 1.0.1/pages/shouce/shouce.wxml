@@ -1,0 +1,10 @@
+<!--pages/shouce/shouce.wxml-->
+<view class="container">
+  <swiper>
+    <block wx:for="{{swiperImg}}">
+      <swiper-item>
+        <image src="{{item}}" class="slide-image"/>
+      </swiper-item>
+    </block>
+  </swiper>
+</view>

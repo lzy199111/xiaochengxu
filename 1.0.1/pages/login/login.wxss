@@ -1,0 +1,132 @@
+/* pages/login/login.wxss */
+page{ 
+ height: 100%; 
+} 
+.swiperCont{
+height:100%;
+width:100%;
+overflow:hidden;
+align-items:center;
+justify-content:space-between;
+box-sizing:border-box;
+background-color:#f2f2f2;
+
+}
+/*登录图片*/
+/* .login-icon{ 
+ flex: none; 
+}  */
+.login-img{ 
+ width: 750rpx; 
+} 
+  
+/*表单内容*/
+.login-from { 
+ width: 90%;
+ margin: 30px auto 0px;
+ height:100%; 
+} 
+  
+.inputView { 
+ background-color: #fff; 
+ line-height: 44px; 
+ margin-bottom: 30rpx;
+} 
+/*输入框*/
+.nameImage, .keyImage { 
+ margin-left: 15px; 
+ vertical-align: middle;
+ width: 14px; 
+ height: 18px
+} 
+  
+.loginLab { 
+ margin: 15px 15px 15px 10px; 
+ color: #545454; 
+ font-size: 14px
+} 
+.inputText { 
+ flex: block; 
+ float: right; 
+ text-align: right; 
+ margin-right: 22px; 
+ margin-top: 11px; 
+ color: #cccccc; 
+ font-size: 14px
+} 
+  
+
+/*按钮*/
+.loginBtnView { 
+ width: 100%; 
+ height: auto; 
+ background-color: #f2f2f2; 
+ margin-top: 0px; 
+ margin-bottom: 0px; 
+ padding-bottom: 0px; 
+} 
+  
+.loginBtnView .loginBtn { 
+ width: 80%; 
+ margin-top: 40px; 
+ background: linear-gradient(to right,#6a9ff8, #3d5cd8);
+ color: #fff;
+}
+.swiper-tab{
+  display: flex;
+  width: 100%;
+   margin-top: -40px; 
+  height: 40px;
+
+}
+.swiper-tab-list{
+  width: 50%;
+  text-align: center;
+  color: #fff;
+  line-height: 38px;
+  box-sizing: border-box;
+  height: 38px;
+}
+.on{
+  border-bottom: 3px solid #3d5cd8
+}
+.swiper-box{
+   height: 100%; 
+  width: 100%;
+}
+.inputView-zhuce { 
+ background-color: #fff; 
+ line-height: 44px; 
+ height: 44px;
+ align-items: center;
+ margin-bottom: 30rpx;
+ display: flex;
+}
+.inputText-zhuce{
+   margin-left: 12px; 
+ color: #cccccc; 
+ font-size: 14px
+}
+.obtain{
+  position: relative;
+  margin-left: 50rpx;
+  padding-left: 12px;
+}
+.obtain::before{
+  content: '';
+  height: 20px;
+  width: 0px;
+  position: absolute;
+  border-left: 1px solid #3d5cd8;
+  left: 0px;
+  top: 12px;
+}
+.wj-pass{
+  font-size: 16px;
+  color:#3d5cd8;
+  text-align: center;
+  margin-top: 10px;
+}
+.activ{
+  color: #acacac;
+}

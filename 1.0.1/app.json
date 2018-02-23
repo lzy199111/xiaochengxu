@@ -1,0 +1,67 @@
+{
+  "pages":[
+    "pages/index/index",
+    "pages/licai/licai",
+    "pages/lics/lics",
+    "pages/my/my",
+    "pages/about/about",
+    "pages/buju/buju",
+    "pages/fankui/fankui",
+    "pages/set/set",
+    "pages/revise/revise",
+    "pages/details/details",
+    "pages/Membership/Membership",
+    "pages/news-detail/news-detail",
+    "pages/xw-detail/xw-detail",
+    "pages/shouce/shouce",
+    "pages/video/video",
+    "pages/lics-detail/lics-detail",
+    "pages/login/login",
+    "pages/forget/forget",
+    "pages/renzh/renzh"
+
+  ],
+  "window":{
+    "backgroundTextStyle":"light",
+    "navigationBarBackgroundColor": "#fff",
+    "navigationBarTitleText": "首页",
+    "navigationBarTextStyle":"black",
+    "backgroundColor": "#699df7"
+  },
+  "tabBar": {
+    "color": "#999",
+    "borderStyle": "white",
+    "selectedColor": "#699df7",
+    "backgroundColor": "#fff",
+    "list": [
+      {
+        "pagePath": "pages/index/index",
+        "text": "首页",
+        "iconPath": "images/index.png",
+        "selectedIconPath": "images/indexCk.png"
+      },
+      {
+        "pagePath": "pages/licai/licai",
+        "text": "理财",
+        "iconPath": "images/lc.png",
+        "selectedIconPath": "images/lcCl.png"
+      },
+      {
+        "pagePath": "pages/lics/lics",
+        "text": "预约理财师",
+        "iconPath": "images/lcs.png",
+        "selectedIconPath": "images/lcsCl.png"
+      },
+      {
+        "pagePath": "pages/my/my",
+        "text": "我的",
+        "iconPath": "images/my.png",
+        "selectedIconPath": "images/myCl.png"
+      }
+    ]
+  },
+  "networkTimeout": {
+    "request": 10000,
+    "downloadFile": 10000
+  }
+}

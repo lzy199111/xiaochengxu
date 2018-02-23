@@ -1,0 +1,242 @@
+/* pages/details/details.wxss */
+.detail-message{
+  width: 100%;
+  height: 360rpx;
+  position:relative;
+}
+.top-banner{
+  position: absolute;
+  top: 0px;
+  left: 0px;
+  width: 100%;
+  height: 100%;
+}
+.detail-news{
+  position: absolute;
+  top: 0px;
+  left: 0px;
+  display: flex;
+  flex-direction: column;
+  z-index: 1;
+  color: #fff;
+  font-size: 14px;
+  width: 100%;
+  box-sizing: border-box;
+  padding: 60rpx 40rpx;
+}
+.title{
+  font-size: 20px;
+}
+.order{
+  border: 1px solid #fff;
+  text-align: center;
+  padding: 10rpx 0;
+  margin: 30rpx 0;
+  width: 100rpx;
+}
+.sect-list{
+  margin-top: 30rpx;
+  display: flex;
+  justify-content: space-between;
+}
+.sect-list .sect-list-num{
+  
+  font-size: 12px;
+}
+.sect-list-num image{
+  padding-right: 20rpx;
+  width: 24rpx;
+  height: 24rpx;
+}
+.detail{
+  width: 100%;
+}
+.swiper-tab{  
+    width: 100%;  
+    display: flex; 
+    text-align: center;  
+     background-color: #fff;
+}  
+.swiper-tab-list{  
+    font-size: 30rpx;   
+    width: 33.33%;  
+    color: #333;
+    padding: 10px 0px;
+    position: relative;  
+}  
+.on{ color: #0150b2;  
+}
+.on::after{
+  content: "";
+  width:50%;
+  border-bottom: 5rpx solid #0150b2;
+  position:absolute;
+  bottom: -1px;
+  left: 25%
+}   
+.swiper-box{ 
+  display: block;
+  width: 100%;
+  height: auto;
+  overflow: hidden; 
+  background-color: #fff;
+  color: #333;
+  box-sizing: border-box;
+  padding:30rpx 0 0 30rpx;
+  }  
+.swiper-box .item{ 
+    font-size: 26rpx;
+    color: #333; 
+    text-align: left;
+    margin: 20rpx;
+    padding: 20rpx;
+    border-radius: 5px;
+    background-color: #fff;  
+}
+.tr{
+  padding: 20rpx 20rpx 20rpx 0;
+  font-size: 12px;
+  display: flex;
+  justify-content: space-between 
+}
+.tr text:nth-child(1){
+  width: 23%;
+  color: #999;
+}
+.tr text:nth-child(2){
+  width: 75%;
+}
+.table{
+  margin-bottom: 40px;
+}
+.jizhun{
+  padding-right: 40rpx;
+  margin-bottom: 40px;
+}
+.titleCommon{
+  position: relative;
+  font-size: 16px;
+  color: #333;
+  font-weight: 700;
+  padding: 40rpx 0;
+}
+.titleCommon:before{
+  content: '';
+  position:absolute;
+  width: 20px;
+  border-bottom: 3px solid #0150b2;
+  top: 0px;
+  left:0px;
+}
+.box{
+  display: flex;
+  width: 100%;
+
+}
+.box .active{
+  color: #fff;
+  background-color: #3c5cd8
+}
+.box text{
+  padding: 20rpx 0;
+  border: 1px solid #eaeaea;
+  width: 40%;
+  text-align: center;
+    line-height: 48rpx;
+    font-size: 12px;
+}
+  .box text:nth-child(1){
+  width: 20%;
+  padding-left: 10px;
+} 
+.gonggao,.videoCont{
+  width: 100%;
+  margin-bottom: 40px;
+}
+.gglists{
+  padding:0 40rpx;
+}
+.listNew{
+  font-size: 14px;
+  padding: 20rpx 0;
+  line-height: 24px;
+}
+.look{
+  width: 100%;
+  padding: 20rpx;
+  text-align: center;
+  font-size: 14px;
+  color: #0150b2;
+}
+
+.videoCont{
+  padding-right: 40rpx;
+  box-sizing: border-box
+}
+.videoList{
+  border-radius: 10px;
+  width: 100%;
+  overflow: hidden;
+  height: 240rpx;
+  position: relative;
+}
+.imgSrc{
+  width: 100%;
+  height: 100%;
+}
+.play{
+  position: absolute;
+  top:50%;
+  left: 50%;
+  width: 60rpx;
+  height: 60rpx;
+  margin-top: -30rpx;
+  margin-left: -30rpx;
+}
+.prompt{
+   margin-right: 20px; 
+  padding:15px 5px 80px 5px;
+  background-color: #f8fbff;
+  display: flex;
+  box-sizing: border-box;
+  flex-direction: column;
+  font-size: 14px; 
+  line-height: 24px;
+  color: #999;
+  border-bottom: 1px solid #fff;
+}
+.point{
+    margin: 0 auto;
+    text-align: center;
+    font-size: 16px;
+    padding: 5px;
+    color: #333;
+    width: 100px;
+    position: relative;
+}
+.btn-footer{
+  position: fixed;
+  bottom: 0px;
+  left: 0px;
+  width: 100%;
+  background-color: #fff;
+  height: 48px;
+  line-height: 48px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding:0 30px;
+}
+.clickBtn{
+  width:500rpx;
+  height: 80%;
+  font-size: 14px;
+  background: linear-gradient(to right,#6a9ff8, #3d5cd8);
+  color: #fff;
+}
+.footerImg{
+  width: 28px;
+  height: 30px
+}
+
+

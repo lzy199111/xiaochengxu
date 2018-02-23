@@ -1,0 +1,16 @@
+<!--pages/revise/revise.wxml-->
+<view class="container">
+  <view class="revise">
+      <view class="section">
+        <input type="text" password="true" placeholder="请输入当前密码" bindinput='current'/>
+      </view>
+      <view class="section">
+        <input type="text" password="true" placeholder="请输入新密码" bindinput='newInput'/>
+      </view>
+      <view class="section">
+        <input type="text" password="true" placeholder="请确认新密码" bindinput='again'/>
+      </view>
+      <view class="btn"><button type="default" size="default" bindtap="queding"> 确定</button></view>
+    
+  </view>
+</view>

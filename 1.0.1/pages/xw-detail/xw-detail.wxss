@@ -1,0 +1,44 @@
+/* pages/detail/detail.wxss */
+@import "../../utils/wxParse/wxParse.wxss";
+.detail{
+  width: 100%;
+  box-sizing: border-box;
+  padding: 0 30rpx;
+  border-top: 1px solid #eaeaea;
+  background-color: #fff;
+}
+.detail-top{
+  padding: 10rpx 0 40rpx 0;
+  border-bottom:1px solid #eaeaea;
+  margin-bottom: 30rpx;
+}
+.h2{
+  font-size: 18px;
+  text-align: center;
+  padding: 20rpx 0;
+}
+.classname{
+  text-align: center;
+  font-size: 14px;
+  color: #999;
+}
+.detail-content image{
+  width: 100%;
+}
+.cont-text{
+  color: #333;
+  font-size: 14px;
+  box-sizing: border-box;
+  word-wrap:break-word;
+  word-break:break-all;
+}
+.detail-footer {
+  margin-top: 40rpx;
+}
+.detail-footer image{
+  width: 100%;
+}
+.wxParse-p{
+  font-size: 14px;
+  margin-bottom: 8px;
+}

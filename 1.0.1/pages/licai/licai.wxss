@@ -1,0 +1,155 @@
+.product,.productLow{
+  margin-top: 30rpx;
+  margin-bottom: 30rpx;
+  width: 92%;
+  background-color: #f2f2f2;
+}
+.product-cont{
+  position: relative;
+  width: 100%;
+  height: 360rpx;
+  background-color: rgba(88,135,237,0.3);
+}
+.productBg{
+  position: absolute;
+  left: 0px;
+  top: 0px;
+  width: 100%;
+  height: 100%;
+}
+.product-inner-top{
+  position: absolute;
+  top: 0px;
+  left: 0px;
+  text-align: center;
+  padding-top: 15rpx;
+  height: 45%;
+  width: 100%;
+  color: #fff;
+}
+.product-name{
+  font-weight: 700;
+  font-size: 16px;
+}
+.delayTime{
+  width: 200rpx;
+  font-size: 28rpx;
+  background-color: #5688c4;
+  border-radius: 20rpx;
+  height: 54rpx;
+  line-height: 54rpx;
+  margin: 30rpx auto 0;
+}
+.product-inner-bottom{
+  position: absolute;
+  bottom: 0px;
+  left: 0px;
+  width: 100%;
+  height: 50%;
+  background-color: #fff;
+}
+.product-info{
+  color: #5688c4;
+  width: 90%;
+  margin: 0 auto;
+  border-bottom: 1px solid #a0a0a0;
+  font-size: 28rpx;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  line-height: 56rpx;
+}
+.product-num{
+  display: flex;
+  justify-content: space-between;
+  padding-top: 40rpx;
+}
+.product-num-list{
+  padding-top: 15rpx;
+  width: 30%;
+  height: 104rpx;
+  font-size: 24rpx;
+  color: #999;
+  text-align: center;
+}
+.product-num-list view{
+  margin-top: 14rpx;
+  font-size: 32rpx
+}
+.product-num-list .active{
+  font-size: 36rpx;
+  color: #5688c4
+}
+.search{
+  width: 92%;
+  margin:30rpx 0;
+  background-color: #fff;
+  border-radius: 10rpx;
+  display: flex;
+}
+.search-img{
+  margin:auto 0 auto 20rpx;
+}
+.searchInput{
+  height: 60rpx;
+  font-size: 28rpx;
+  padding-left: 30rpx;
+  width: 600rpx;
+  }
+
+/*
+.productLow-cont{
+  position: relative;
+  padding: 0 40rpx;
+  height: 300rpx;
+  background-color: #fff;
+}
+.jiao{
+  position: absolute;
+  right: 0px;
+  width: 120rpx;
+  height: 120rpx;
+  text-align: right;
+  vertical-align: bottom
+}
+.jiao image{
+  position: absolute;
+  top: 0px;
+  left: 0px;
+  width: 120rpx;
+  height: 120rpx;
+}
+.jiao text{
+  display: block;
+  width: 140%;
+  font-size: 28rpx;
+  color: #fff;
+  transform-origin: 25% 50%;
+  transform: rotate(45deg);
+  text-align: center;
+}
+.low-name{
+  display: block;
+  padding: 30rpx 0;
+  line-height: 48rpx;
+  color: #333;
+  font-size: 32rpx;
+}
+.pro-tip{
+  display: flex;
+}
+.pro-tip text{
+  text-align: center;
+  display: block;
+  font-size: 28rpx;
+  color: #999;
+  border: 1px solid #a0a0a0;
+  padding: 10rpx;
+  margin-right: 20rpx;
+}
+ .lowBottom{
+  position: absolute;
+  bottom: 0px;
+  left: 0px;
+  width: 100%;
+}  */

@@ -1,0 +1,44 @@
+<!--pages/lics/lics.wxml-->
+<view class="container">
+  <view class="inpt">
+    <view class="commonTit">
+      <text>根据您的筛选为您推荐</text>
+    </view>
+      <view class="section">
+        <picker mode="selector" value="{{index}}" bindchange="sexSet" range="{{array}}">
+          <view class="sexInpt">{{sex}}</view>
+        </picker>
+        <image class="select" src="../../images/select.png"></image>
+      </view>
+      <view class="section">
+        <picker mode="selector" value="{{indPro}}" bindchange="cityChange" range="{{provinces}}">
+          <view class="sexInpt">{{city}}</view>
+        </picker>
+        <image class="select" src="../../images/select.png"></image>
+      </view>
+      <view class="section">
+        <picker mode="selector" value="{{indArea}}" bindchange="areaChange" range="{{areaArray}}">
+          <view class="sexInpt">{{area}}</view>
+        </picker>
+        <image class="select" src="../../images/select.png"></image>
+      </view>
+      <view class="section">
+        <button type="default" bindtap="confirm">确定</button>
+      </view>
+  </view>
+  <view class="adviser">
+    <view class="commonTit">
+      <text>优秀顾问列表</text>
+    </view>
+    <view class="adviserList">
+      <view class="adviserMess" wx:for="{{adviser}}" wx:key="key" data-adviser_id="{{item.adviser_id}}" bindtap="lookLics">
+        <image class="adviseImg" src="{{item.mingpian==''?'https://app.chainson-asset.com/Public/Uploads/resource/3.0/adviser.png':item.mingpian}}"></image>
+        <text>姓名：{{item.name}}</text>
+        <text>城市：{{item.branch}}</text>
+      </view>
+    </view>
+  </view>
+
+
+
+</view>

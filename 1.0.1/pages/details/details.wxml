@@ -1,0 +1,139 @@
+<!--pages/details/details.wxml-->
+<view class="container">
+  <view class="detail-message">
+    <image class="top-banner" src="{{detailBanner}}"></image>
+    <view class="detail-news">
+      <text class="title">{{prodetail.pro_name}}</text>
+      <text>年化收益基准 {{prodetail.yeji_jizuhn}}</text>
+      <view class="sect-list">
+        <view class='sect-list-num'>
+          <image src='../../images/erdu.png'></image>
+          <text>剩余额度{{prodetail.last_collect}}万</text>
+        </view>
+        <!-- <view class='sect-list-num' wx:if="{{}}">
+          <image src='../../images/mier.png'></image>
+          <text> 剩余名额{{prodetail.man}}人</text>
+        </view>   -->
+         <view class='sect-list-num'>
+          <image src='../../images/time.png'></image>
+          <text>{{prodetail.zhuangtai}}</text>
+        </view>
+      </view>
+    </view>
+  </view>
+  <view class="detail">
+    <view class="swiper-tab">  
+      <view class="swiper-tab-list {{currentTab==0 ? 'on' : ''}}" data-current="0" bindtap="swichNav">基本信息</view>  
+      <view class="swiper-tab-list {{currentTab==1 ? 'on' : ''}}" data-current="1" bindtap="swichNav">募集账号</view>
+      <view class="swiper-tab-list {{currentTab==2 ? 'on' : ''}}" data-current="2" bindtap="swichNav">产品公告</view> 
+    </view>  
+    <swiper current="{{currentTab}}" class="swiper-box" duration="300" bindchange="bindChange" style="height: {{clientHeight?clientHeight+'px':'auto'}}">  
+        <swiper-item>
+          <scroll-view scroll-y="true"  style="height: {{clientHeight?clientHeight+'px':'auto'}}">
+            <view class="table">
+              <view class="tr">
+                <text>托管人</text>
+                <text>{{prodetail.tuoguanren}}</text>
+              </view>
+              <view class="tr">
+                <text>产品期限</text>
+                <text>{{prodetail.store_time}}</text>
+              </view>
+              <view class="tr">
+                <text>风险等级</text>
+                <text>{{prodetail.fengxiandengji}}</text>
+              </view>
+              <view class="tr">
+                <text>管理人</text>
+                <text>{{prodetail.pro_manager}}</text>
+              </view>
+              <view class="tr">
+                <text>认购费率</text>
+                <text>{{prodetail.rengoufeilv}}</text>
+              </view>
+              <view class="tr">
+                <text>起投金额</text>
+                <text>{{prodetail.qitoujiner}}</text>
+              </view>
+              <view class="tr">
+                <text>产品规模</text>
+                <text>{{prodetail.all_collect}}</text>
+              </view>
+            </view>
+            <!--收益基准  -->
+            <view class="jizhun">
+              <view class="titleCommon">
+                收益基准
+              </view>
+              <view class="jzCont">
+                <view class="box">
+                  <text class="active">份额类型</text>
+                  <text class="active">投资区间</text>
+                  <text class="active">业绩基准</text>
+                </view>
+                <view class="box" wx:for="{{prodetail.jizhun}}" wx:key="key">
+                  <text>{{item.share}}</text>
+                  <text>{{item.interval}}</text>
+                  <text>{{item.yeji_jizuhn}}</text>
+                </view>
+              </view>
+            </view>
+    <!--产品公告  -->
+             <view class="gonggao">
+                <view class="titleCommon">
+                产品附件
+              </view>
+              <view class="gglists">
+                <view class="listNew" data-id='{{item.pdfUrl}}' catchtap='liulan' wx:for="{{prodetail.fujian}}" wx:key="key">{{item.classifyName}}</view>
+              </view>
+            </view>   
+    <!--产品视频  -->
+            <view class="videoCont" wx:if="{{prodetail.shipin.length!=0}}" >
+              <view class="titleCommon">
+                产品视频讲解
+              </view>
+              <view class="videoList" data-url='{{prodetail.shipin.sp_url}}' catchtap='videoLook'>
+                <image class="imgSrc" src="{{prodetail.shipin.sp_image}}"></image>
+                <image class="play" src="../../images/play.png"></image>
+              </view>
+            </view>
+            <view class="prompt">
+              <text class="point">风险提示</text>
+              <text>政策风险：国家或地方相关政策如货币政策、财政政策、税收政策、产业政策、投资政策及相关配套法规的调整与变化，可能会影响基金项下证券投资的收益水平。</text>
+            </view>
+          </scroll-view> 
+        </swiper-item>
+          <!-- 募集账号 -->
+        <swiper-item>  
+          <view class="ammont">
+            <view class="table">
+              <view class="tr">
+                <text>募集银行</text>
+                <text>{{prodetail.mujiyinhang}}</text>
+              </view>
+              <view class="tr">
+                <text>开户名</text>
+                <text>{{prodetail.kaihuming}}</text>
+              </view>
+              <view class="tr">
+                <text>募集账号</text>
+                <text>{{prodetail.mujizhanghao}}</text>
+              </view>
+              <view class="tr">
+                <text>打款备注</text>
+                <text>{{prodetail.dakuanbeizhu}}</text>
+              </view>
+            </view>
+          </view>   
+        </swiper-item> 
+        <swiper-item>  
+          <view class="classname">无</view>   
+        </swiper-item>   
+    </swiper>
+    <!--底部按钮  -->
+    <view class="btn-footer">
+      <image class="footerImg" src="../../images/sihang.png"></image>
+      <button class="clickBtn" bindtap='interested'>{{collectText}}</button>
+    </view> 
+  </view>
+</view>

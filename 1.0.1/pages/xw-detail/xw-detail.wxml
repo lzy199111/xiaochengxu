@@ -1,0 +1,20 @@
+<!--pages/detail/detail.wxml-->
+<import src="../../utils/wxParse/wxParse.wxml" />
+<view class="container">
+  <view class="detail">
+    <view class="detail-top">
+      <view class="h2">{{newsAll.title}}</view>
+      <view class="classname">
+        <text>{{newsAll.date_time}}</text>
+      </view>
+    </view>
+    <view class="detail-content">
+       <!-- <image src="https://app.chainson-asset.com/Public/Uploads/resource/3.0/xqBanner.jpg" mode="widthFix"></image>  -->
+       <!-- <text class="cont-text">{{content}}</text>  -->
+       <template is="wxParse" data="{{wxParseData:article.nodes}}"/>
+    </view>
+    <view class="detail-footer">
+      <image src="https://app.chainson-asset.com/Public/Uploads/resource/3.0/xqFooter.jpg" mode="widthFix"></image>
+    </view>
+  </view>
+</view>

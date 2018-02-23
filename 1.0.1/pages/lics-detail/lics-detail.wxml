@@ -1,0 +1,42 @@
+<!--pages/lics-detail/lics-detail.wxml-->
+<view class="container">
+  <view class="big-heard">
+    <image class="authentication" src="../../images/authentication.png"></image>
+    <image class="head" src="{{lics.mingpian==''?'https://app.chainson-asset.com/Public/Uploads/resource/3.0/adviser.png':lics.mingpian}}"></image>
+  </view>
+  <view class="adviser">
+    <view class="namecl">
+      <text>私人顾问  {{lics.name}}</text>
+      <view class="address">
+        <image src="../../images/address.png"></image>
+        <text>{{lics.address}}</text>
+      </view>   
+    </view>
+    <view class="adviser-tit">
+      私人顾问档案
+    </view>
+    <view class="archives">
+      <view class="archives-list">
+        <text>性别：</text>
+        <text>{{lics.sex}}</text>
+      </view>
+      <!-- <view class="archives-list">
+        <text>年龄：</text>
+        <text>{{lics.age}}</text>
+      </view> -->
+      <view class="archives-list">
+        <text>管理资产：</text>
+        <text>{{lics.zichan}}</text>
+      </view>
+      <view class="archives-list">
+        <text>服务客户：</text>
+        <text>{{lics.kehu}}</text>
+      </view>
+      <view class="archives-list">
+        <text class='clickHe' data-telphone="{{lics.telphone}}" bindtap='call'>点击联系他</text>  
+      </view> 
+    </view>
+    <view class="btn"><button type="default" data-id='' size="default" catchtap='chose'> 选他为我服务</button></view>
+  </view>
+  
+</view>

@@ -1,0 +1,117 @@
+<!--index.wxml-->
+<import src="../templast-list/templast-list.wxml"/>
+<view class="container">
+  <swiper autoplay="{{autoplay}}" interval="{{interval}}" duration="{{duration}}" circular="{{circular}}" id="swiper">
+    <block wx:for="{{imgUrls}}" wx:key="key">
+      <swiper-item class="swiper-top">
+        <image src="{{item}}" class="slide-image" bindtap='imgLook'/> 
+      </swiper-item>
+    </block>
+  </swiper>
+  <view class="navList">
+    <view class="nav-list-btn" bindtap="about">
+      <image src="../../images/about.png"></image>
+      <text>企业介绍</text>
+    </view>
+    <view class="nav-list-btn" catchtap='tuijian'>
+      <image src="../../images/tuijian.png"></image>
+      <text>推荐有礼</text>
+    </view>
+    <view class="nav-list-btn">
+      <image src="../../images/baogao.png" catchtap='caifu'></image>
+      <text>财富报告</text>
+    </view>
+    <view class="nav-list-btn" bindtap="buju">
+      <image src="../../images/buju.png"></image>
+      <text>全国布局</text>
+    </view>
+  </view>
+  <!--热门产品  -->
+<swiper autoplay="{{false}}" interval="{{interval}}" duration="{{duration}}" circular="{{circular}}"  id='productSwiper'>
+    <block wx:for="{{product}}" wx:key="key">
+      <swiper-item>
+        <view class="product"  data-pro_id="{{item.pro_id}}" catchtap='details'>
+          <view class="product-cont">
+            <image class="productBg" src="{{item.image}}"></image>
+            <view class="product-inner-top">  
+              <text class="product-name">{{item.pro_name}}</text>
+              <view class="delayTime">{{item.zhuangtai}}</view>
+            </view>
+            <view class="product-inner-bottom">
+              <view class="product-num">
+                <view class="product-num-list">
+                  <text>业绩基准</text>
+                  <view>{{item.yeji_jizuhn}}</view>          
+                </view>
+                <view class="product-num-list">
+                  <text>产品期限</text>
+                  <view>{{item.store_time}}</view>          
+                </view>
+                <view class="product-num-list">
+                  <text>剩余额度</text>
+                  <view><text class="active">{{item.last_collect}}</text> 万</view>      
+                </view>
+              </view>
+            </view>
+          </view>
+        </view>
+      </swiper-item>
+    </block>
+  </swiper>
+  <!--新闻资讯  -->
+  <view class="common-contain">
+    <view class="news">
+      <view class="conmmon-header">
+        <text class="header-title">新闻资讯</text>
+        <view class="header-click" data-common="news" catchtap="commonMore">查看更多 <image src='../../images/click.png' style='width:12px;height:12px;'></image></view>
+      </view>
+       <view class="common-cont">
+        <view class="common-cont-img"><image src="{{news.bannerSrc}}"></image></view>
+        <block wx:for="{{newsData}}" wx:key="key">
+          <template is="templast-list" data="{{...item}}"></template>
+        </block>
+      </view> 
+    </view>
+  </view>
+  <!--企业手册  -->
+  <view class="common-contain">
+    <view class="news">
+      <view class="conmmon-header">
+        <text class="header-title">企业手册</text>
+      </view>
+      <view class="common-cont">
+        <view class="common-cont-img"><image src="{{shouce.bannerSrc}}"></image></view>
+        <view class="common-cont-list" wx:for="{{shouceData}}" wx:key="key" catchtap="shouceAll">
+          <view class="common-item">
+            <view class="item-img"><image src="{{item.newSrc}}"></image></view>
+            <view class="item-text">
+              <text>{{item.title}}</text>
+              <text class="yuedu" data-numid="{{item.id}}">阅读全部</text>
+           </view>
+      </view>
+    </view>
+      </view>
+    </view>
+  </view>
+  <!--企业视频  -->
+  <view class="common-contain">
+    <view class="news">
+      <view class="conmmon-header">
+        <text class="header-title">企业视频</text>
+      </view>
+      <view class="common-cont" catchtap="videoLook">
+        <view class="common-cont-img">
+          <image src="{{video.bannerSrc}}"></image>
+          <image src="../../images/play.png" class="play"></image>
+        </view>
+        <view class="viedo-text">乾晟资产：朝乾夕惕  共创晟睿 </view>
+      </view>
+    </view>
+    <view class="index-bottom">
+      <view class="kefu" bindtap="tel">客服热线：<text class="active">400-061-5801</text></view>
+      <text class="datatime">（服务时间:工作日9：00-18：00）</text>
+      <text class="bot-text">金融创新 服务至上</text>
+      <view class="btn"><button type="default" size="default" bindtap="fankui"> 意见反馈 </button></view>
+    </view>
+  </view>
+</view>

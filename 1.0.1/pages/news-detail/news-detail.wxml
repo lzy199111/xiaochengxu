@@ -1,0 +1,9 @@
+<!--pages/news-detail/news-detail.wxml-->
+<import src="../templast-list/templast-list.wxml"/>
+<view class="container">
+  <view class="detail">
+    <block wx:for="{{lisData}}">
+      <template is="templast-list" data="{{...item}}"></template>
+    </block>
+  </view>
+</view>

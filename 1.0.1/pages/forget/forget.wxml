@@ -1,0 +1,17 @@
+<!--pages/forget/forget.wxml-->
+<view class="container">
+  <view class="revise">
+      <view class="section">
+        <input type="number" placeholder="请输入手机号" bindinput='phoneInput'/>
+      </view>
+      <view class="section sectionCode">
+        <input type="number" password="true" placeholder="请输入验证码" bindinput='codeInput'/>
+        <label class="loginLab {{activeCl?'activ':''}}" bindtap='yanzheng'>{{yanzheng}}</label>
+      </view>
+      <view class="section">
+        <input type="number" password="true" placeholder="请确认新密码" bindinput='passWordInput'/>
+      </view>
+      <view class="btn"><button type="default" size="default" bindtap="back">找回密码</button></view>
+    
+  </view>
+</view>

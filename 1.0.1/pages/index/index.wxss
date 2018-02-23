@@ -1,0 +1,200 @@
+ @import "../templast-list/templast-list.wxss";
+#swiper{
+  width: 100%;
+  height: 320px;
+}
+#productSwiper{
+  width: 100%;
+  height: 428rpx;
+}
+.swiper-top{
+  text-align: center;
+}
+.slide-image{
+  width: 100%;
+  height: 100%;
+}
+.navList{
+  width: 100%;
+  padding: 30rpx 0;
+  display: flex;
+  font-size: 28rpx;
+  color: #a0a0a0;
+  background-color: #fff;
+  justify-content: space-around
+}
+.nav-list-btn{
+  width: 25%;
+  display: block;
+  text-align: center;
+  justify-content: center;
+}
+.nav-list-btn image{
+  width: 60rpx;
+  height: 60rpx;
+}
+.nav-list-btn text{
+  display: block;
+  margin-top: 10rpx;
+}
+.product{
+  padding: 54rpx 30rpx;
+  box-sizing: border-box;
+  background-color: #f2f2f2;
+}
+.product-cont{
+  position: relative;
+  width: 100%;
+  height: 320rpx;
+  background-color: rgba(88,135,237,0.5);
+}
+.productBg{
+  position: absolute;
+  left: 0px;
+  top: 0px;
+  width: 100%;
+  height: 100%;
+}
+.product-inner-top{
+  position: absolute;
+  top: 0px;
+  left: 0px;
+  text-align: center;
+  padding-top: 15rpx;
+  height: 45%;
+  width: 100%;
+  color: #fff;
+}
+.product-name{
+  font-weight: 700;
+  font-size: 18px;
+}
+.delayTime{
+  width: 180rpx;
+  font-size: 14px;
+  background-color: #5688c4;
+  border-radius: 20rpx;
+  height: 54rpx;
+  line-height: 54rpx;
+  margin: 15rpx auto 0;
+}
+.product-inner-bottom{
+  position: absolute;
+  bottom: 0px;
+  left: 0px;
+  width: 100%;
+  height: 52%;
+  background-color: #fff;
+}
+.product-info{
+  color: #5688c4;
+  width: 90%;
+  margin: 0 auto;
+  border-bottom: 1px solid #a0a0a0;
+  font-size: 12px;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  line-height: 56rpx;
+}
+.product-num{
+  display: flex;
+  justify-content: space-around;
+  padding-top: 30rpx;
+}
+.product-num-list{
+  padding-top: 15rpx;
+  width: 33.33%;
+  height: 104rpx;
+  font-size: 12px;
+  color: #999;
+  text-align: center;
+}
+.product-num-list view{
+  margin-top: 6rpx;
+  font-size: 32rpx
+}
+.product-num-list .active{
+  font-size: 36rpx;
+  color: #5688c4
+}
+.conmmon-header{
+  display: flex;
+  font-size: 36rpx;
+  justify-content: space-between;
+  align-items: center;
+  height: 50rpx;
+  padding: 40rpx 60rpx 20rpx 0; 
+  border-bottom:1px solid #eaeaea;
+}
+.common-contain{
+  width: 100%;
+  margin-bottom: 60rpx;
+  background-color: #fff;
+}
+.news{
+  width: 100%;
+}
+.header-title{
+    border-left:10rpx solid #577fe8;
+    padding-left: 20rpx;
+}
+.header-click{
+  /* background: url(../../images/click.png) no-repeat right center;
+  background-size: 24rpx 40rpx; */
+  font-size: 28rpx;
+  color: #a0a0a0;
+  padding-right: 30rpx;
+}
+.common-cont{
+  padding:40rpx;
+  border-bottom:2px solid #eaeaea 
+}
+.common-cont-img{
+  width: 100%;
+  height: 300rpx;
+  position: relative;
+  
+}
+.common-cont-img image{
+  width: 100%;
+  height: 100%;
+  
+}
+
+.common-cont-img .play{
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  width: 100rpx;
+  height: 100rpx;
+  margin-top: -50rpx;
+  margin-left: -50rpx;
+}
+.viedo-text{
+  margin: 40rpx 0 48rpx 0;
+}
+
+.index-bottom{
+  padding-top:40rpx;
+  line-height: 64rpx;
+  background-color: #f2f2f2;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  color: #999;
+  font-size: 32rpx;
+}
+.index-bottom .active{
+  color: #3d5cd8;
+  font-size: 48rpx;
+}
+.btn{
+  width: 80%;
+  margin: 0 auto;
+}
+ .btn button{
+ background: linear-gradient(to right,#6a9ff8, #3d5cd8);
+ color: #fff;
+ margin-top: 48rpx;
+}  

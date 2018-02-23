@@ -1,0 +1,249 @@
+/* pages/my/my.wxss */
+.my{
+  width: 100%;
+}
+.myTop{
+  width: 100%;
+  margin-bottom: 40rpx;
+  height: 600rpx;
+  position: relative;
+}
+.banner{
+  position: absolute;
+  top: 0px;
+  left: 0px;
+  width: 100%;
+  height: 80%;
+}
+.set{
+  position: absolute;
+  z-index: 2;
+  width: 60rpx;
+  height: 60rpx;
+  left: 40rpx;
+  top: 40rpx;
+}
+.set image{
+  width: 100%;
+  height: 100%;
+}
+.section{
+  position: absolute;
+  z-index: 3;
+  width: 100%;
+  height: 55%;
+  left: 0;
+  bottom: 0;
+  background-color: #fff;
+}
+.messageTop{
+  display: flex;
+  justify-content: space-between;
+  font-size: 32rpx;
+  color: #999;
+  vertical-align: bottom;
+}
+.messageTop-wu{
+  display: flex;
+  font-size: 32rpx;
+  color: #333;
+  vertical-align: bottom;
+}
+.vip{
+  font-size: 14px;
+  margin-top: 20rpx;
+  margin-left: -80rpx;
+  display: flex;
+  flex-direction: column;
+}
+.vip-wu{
+  margin-top: 5px;
+  margin-left: 50rpx;
+}
+.renzh{
+  color: #5688c4;
+  font-size: 16px;
+ 
+}
+.logo{
+  width: 140rpx;
+  height: 140rpx;
+  margin-top: -50%;
+}
+.vipImg{
+  width: 40rpx;
+  height: 40rpx;
+  margin-left: 10px;
+  vertical-align: top;
+}
+.chakan{
+  margin-top: 30rpx;
+  font-size: 24rpx;
+  padding-right: 20rpx;
+}
+.logoCont{
+  margin-left: 80rpx;
+}
+.message{
+  margin-top: 80rpx;
+  display: flex;
+}
+.mess-list{
+  width: 33%;
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  font-size: 40rpx;
+}
+.mess-list-text{
+  font-size: 28rpx;
+  line-height: 60rpx;
+}
+.assets{
+  background-color: #fff;
+}
+.common-header{
+  font-size: 36rpx;
+  padding: 30rpx 0;
+  border-bottom: 1px solid #eaeaea;
+}
+.common-header text{
+  padding-left: 40rpx;
+  border-left: 5px solid #6190f0;
+}
+.assets-cont{
+  display: flex;
+  flex-direction: column;
+  font-size:16px;
+  align-items: center;
+  margin-bottom: 30rpx;
+  padding-bottom: 80rpx;
+}
+.tip{
+  padding: 60rpx 0;
+  text-align: center;
+}
+.look{
+  text-align: center;
+  color: #6190f0;
+  width: 80%;
+  padding: 16rpx 0;
+  border: 1px solid #6190f0;
+}
+.asset-show{
+  padding: 40rpx;
+  margin-bottom: 30rpx;
+
+}
+.asset-show-inner{
+  padding: 40rpx;
+  border-radius: 5px;
+  margin-bottom: 30rpx;
+  background-color: #f2f2f2;
+}
+.prodct-name{
+  font-size: 16px;
+  padding: 8rpx;
+}
+.product-mess{
+  display: flex;
+  margin-top: 40rpx;
+  justify-content: space-between
+}
+.product-mess-tit{
+  display: flex;
+  flex-direction: column;
+}
+.hui{
+  font-size: 28rpx;
+  color: #a0a0a0;
+  padding: 10rpx;
+}
+.product{
+  padding: 54rpx 40rpx;
+  background-color: #fff;
+}
+.product-cont{
+  position: relative;
+  background-color: #f2f2f2;
+  width: 100%;
+  height: 320rpx;
+  color: #999;
+  margin-bottom: 40rpx;
+}
+.productBg{
+  position: absolute;
+  left: 0px;
+  top: 0px;
+  width: 100%;
+  height: 100%;
+}
+.product-inner-top{
+  position: absolute;
+  top: 0px;
+  left: 0px;
+  text-align: center;
+  padding-top: 15rpx;
+  height: 45%;
+  width: 100%;
+}
+.product-name{
+  font-weight: 700;
+  font-size: 16px;
+}
+.delayTime{
+  width: 200rpx;
+  font-size: 28rpx;
+  background-color: #5688c4;
+  border-radius: 20rpx;
+  height: 54rpx;
+  color: #fff;
+  line-height: 54rpx;
+  margin: 15rpx auto 0;
+}
+.product-inner-bottom{
+  position: absolute;
+  bottom: 0px;
+  left: 0px;
+  width: 100%;
+  height: 52%;
+  background-color: #fff;
+}
+.product-info{
+  color: #5688c4;
+  width: 90%;
+  margin: 0 auto;
+  border-bottom: 1px solid #a0a0a0;
+  font-size: 28rpx;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  line-height: 56rpx;
+}
+.product-num{
+  display: flex;
+  justify-content: space-around;
+}
+.product-num-list{
+  padding-top: 15rpx;
+  width: 33.33%;
+  height: 104rpx;
+  font-size: 24rpx;
+  color: #999;
+  text-align: center;
+}
+.product-num-list view{
+  margin-top: 6rpx;
+  font-size: 32rpx
+}
+.product-num-list .active{
+  font-size: 36rpx;
+  color: #5688c4
+}
+.prod{
+  background-color: #fff;
+}
+.rzText{
+  font-size: 14px;
+  color: #999;
+}

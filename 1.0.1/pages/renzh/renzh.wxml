@@ -1,0 +1,19 @@
+<!--pages/revise/revise.wxml-->
+<view class="container">
+  <view class="revise">
+      <view class="section">
+        <input type="text" placeholder="请输入姓名" bindinput='name'/>
+      </view>
+      <view class="section">
+        <input type="text" placeholder="请输入身份证号" bindinput='card'/>
+      </view>
+      <view class="section">
+        <input type="text" placeholder="请确认身份证号" bindinput='again'/>
+      </view>
+      <view class="btn">
+        <button type="default" size="default" bindtap="renzheng"> 认证</button>
+        <text class='messText'>请确保以上信息真实有效</text>
+      </view>
+    
+  </view>
+</view>

@@ -1,0 +1,31 @@
+.common-cont-list{
+  width: 100%;
+  border-bottom: 1px solid #eaeaea;
+  padding: 40rpx 0;
+}
+.common-item{
+  display: flex;
+  height: 200rpx;
+  width: 100%;
+  justify-content: space-between
+}
+.item-img{
+  width: 200rpx;
+  }
+.item-img image{
+  width: 200rpx;
+  height: 160rpx;
+}
+.item-text{
+  margin-left: 30rpx;
+  font-size: 28rpx;
+  line-height: 48rpx;
+  height: 200rpx;
+  position: relative;
+}
+.yuedu{
+  color: #a0a0a0;
+  position: absolute;
+  bottom: 0px;
+  right: 0px;
+}

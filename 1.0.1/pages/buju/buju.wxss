@@ -1,0 +1,97 @@
+/* pages/buju/buju.wxss */
+.banner{
+  width: 100%;
+  height: 700rpx;
+}
+.buju{
+  width: 100%;
+}
+.banner image{
+  width: 100%;
+  height: 100%;
+}
+.bujucont{
+  padding: 60rpx 0;
+  background-color: #fff;
+  border-bottom: 1px solid #eaeaea;
+}
+.cont-title{
+  width: 90%;
+  text-align: center;
+  margin: 0 auto;
+  border: 1px solid #0150b2;
+  padding: 20rpx 0;
+}
+.shipai{
+  width: 100%;
+  height: 360rpx;
+  margin-bottom: 20rpx;
+  overflow: hidden;
+}
+.shipai image{
+  width: 100%;
+  height: 100%;
+  margin-top: 60rpx;
+}
+.shipaiList{
+  display: flex;
+  justify-content: space-around;
+}
+.shipaiList image{
+  width: 170rpx;
+  height:170rpx;
+}
+.cityMap{
+  width: 100%;
+  height: 600rpx;
+  margin-top: 60rpx;
+  text-align: center;
+}
+.cityMap image{
+  width: 95%;
+  height: 100%;
+}
+.course{
+  display: block;
+  font-size: 24rpx;
+  text-align: center;
+  line-height: 48rpx;
+  color: #999;
+}
+.cityList{
+  width: 100%;
+  display:flex; 
+  flex-wrap: wrap;
+  margin-top: 60rpx;
+}
+.listBtn{
+  width: 24%;
+  margin-left: 1%;
+  height: 48px;
+  text-align: center;
+  line-height: 48px;
+  background-color: #f2f2f2;
+  margin-bottom: 20rpx;
+}
+.lianxi{
+  font-size: 24rpx;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  line-height: 48rpx;
+  margin-top: 60rpx;
+  color: #999
+}
+ .big-text{
+  font-size: 28rpx;
+} 
+.btn{
+  width: 80%;
+  padding: 60rpx;
+  margin: 0 auto;
+}
+.btn button{
+ background: linear-gradient(to right,#6a9ff8, #3d5cd8);
+ color: #fff;
+ margin-top: 48rpx;
+}

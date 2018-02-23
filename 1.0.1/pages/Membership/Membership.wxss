@@ -1,0 +1,8 @@
+/* pages/Membership/Membership.wxss */
+.vipImg{
+  width: 100%;
+  height: 100%;
+}
+.vipImg image{
+  width: 100%;
+}

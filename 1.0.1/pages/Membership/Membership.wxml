@@ -1,0 +1,6 @@
+<!--pages/Membership/Membership.wxml-->
+<view class="container">
+  <view class="vipImg">
+    <image src="{{vipImg}}"mode="widthFix"></image>
+  </view>
+</view>

@@ -1,0 +1,14 @@
+<!--pages/video/video.wxml-->
+<view class="container">
+
+  <video src="{{videoSrc}}" id="video" custom-cache="{{false}}"></video>
+  <view class="videoCont">
+    <view class="viedo-text">乾晟资产：朝乾夕惕  共创晟睿 </view>
+    <view class="index-bottom">
+      <view class="kefu" bindtap="tel">客服热线：<text class="active">400-061-5801</text></view>
+      <text class="datatime">（服务时间:工作日9：00-18：00）</text>
+      <text class="bot-text">金融创新 服务至上</text>
+    </view>
+  </view>
+  
+</view>

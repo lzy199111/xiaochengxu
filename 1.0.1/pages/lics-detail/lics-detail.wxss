@@ -1,0 +1,79 @@
+/* pages/lics-detail/lics-detail.wxss */
+.big-heard{
+  width: 100%;
+  position: relative;
+}
+.authentication{
+  width: 146rpx;
+  height: 44rpx;
+  position: absolute;
+  top: 60rpx;
+  right: 0;
+}
+.head{
+  width: 100%;
+  height: 530rpx;
+}
+.adviser{
+  width: 100%;
+  background-color: #fff;
+}
+.namecl{
+  display: flex;
+  flex-direction: column;
+  width: 90%;
+  color: #6e6e6e;
+  box-sizing: border-box;
+  padding: 60rpx 40rpx;
+  margin: 0 auto;
+  font-size: 14px;
+}
+.address{
+  padding-top: 30rpx;
+}
+.address image{
+  margin-right: 30rpx;
+  width: 33rpx;
+  height: 33rpx;
+}
+.adviser-tit{
+  border-left: 5px solid #4062db;
+  margin-bottom: 40rpx;
+  font-size: 20px;
+  padding-left: 40rpx;
+}
+.archives{
+  width: 100%;
+  padding: 0 40rpx;
+  box-sizing: border-box;
+}
+.archives-list{
+  display: flex;
+  width: 100%;
+  padding-bottom: 40rpx;
+  flex-direction: row;
+  font-size: 16px;
+  color: #6e6e6e;
+}
+.archives-list text:nth-child(1){
+  width: 220rpx;
+  text-align: left;
+}
+.archives-list text:nth-child(2){
+  width: 500rpx;
+}
+.btn{
+  width: 80%;
+  margin: 0px auto 30rpx;
+}
+.btn button{
+ background: linear-gradient(to right,#6a9ff8, #3d5cd8);
+ color: #fff;
+ margin-top: 48rpx;
+}
+.clickHe{
+  color: #fff;
+  background-color: #6a9ff8;
+  box-sizing: border-box;
+  padding: 10rpx 0 10rpx 10rpx;
+}
