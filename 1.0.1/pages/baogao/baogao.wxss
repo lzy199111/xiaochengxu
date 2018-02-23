@@ -1,0 +1,121 @@
+/* pages/baogao/baogao.wxss */
+page{
+  height: 100%;
+
+}
+.swiper{
+  background-color: #fff;
+  height: 100%;
+  width: 100%;
+}
+.cont-list{
+  height: 100%;
+}
+.cont-theme{
+  color: #fff;
+  font-size: 18px;
+  padding: 60rpx 0;
+  text-align: center;
+  background-color: #5797f8
+}
+.shuo{
+  margin-top: 80rpx;
+  font-size: 14px;
+  text-align: center;
+  display: flex;
+  flex-direction: column
+}
+.shuo text{
+  margin-bottom: 20rpx;
+}
+.begin{
+  margin:80rpx auto;
+  border-radius: 10px;
+  color: #fff;
+  padding: 20rpx 0;
+  background-color: #5797f8;
+  text-align: center;
+  width: 300rpx;
+  font-size: 14px;
+}
+.tip{
+  display: flex;
+  flex-direction: column;
+  color: #5797f8;
+  font-size: 12px;
+  text-align: center;
+}
+.theme{
+  font-size: 16px;
+  margin-bottom: 80rpx;
+}
+.item-top{
+  margin-top: 80rpx;
+  padding: 0 40rpx;
+}
+.radio-group{
+  display: flex;
+  flex-direction: column;
+  font-size: 14px
+}
+.radio{
+  margin-bottom: 40rpx;
+  display: flex;
+}
+.radio radio{
+  font-size: 12px
+}
+.wx-radio-input{width:14px !important; height:14px !important;}
+.navBtn{
+  display: flex;
+  margin-top: 60rpx;
+  flex-direction: row
+}
+.navBtn button{
+  font-size: 14px;
+  color: #fff;
+  background-color: #ccc;
+  width:200rpx 
+}
+.navBtn button.Next{
+  background-color: #5797f8
+}
+.result-them{
+  text-align: center;
+  font-size: 16px;
+  margin: 160rpx 0 30rpx 0;
+}
+.result{
+  text-align: center
+}
+.result image{
+  width: 192rpx;
+  height: 152rpx;
+}
+.fen{
+  padding: 20rpx 30rpx;
+  font-size: 12px;
+  line-height: 48rpx
+}
+.leixing{
+  padding: 0 30rpx;
+  font-size: 12px;
+}
+@keyframes myfirst
+{
+from {transform: translate3d(0,0,0);opacity:1}
+to {transform: translate3d(0,-30rpx,0);opacity:0}
+}
+@-webkit-keyframes myfirst{
+  from {transform: translate3d(0,0,0);opacity:1}
+to {transform: translate3d(0,-30rpx,0);opacity:0}
+}
+.dong{
+  position: absolute;
+  bottom: 30rpx;
+  left: 50%;
+  margin-left: -20rpx;
+  width: 40rpx;
+  height: 24rpx;
+  animation: myfirst 1.5s infinite
+}

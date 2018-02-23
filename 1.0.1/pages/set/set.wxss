@@ -8,7 +8,7 @@
 .set-list{
   width: 90%;
   border-bottom: 1px solid #eaeaea;
-  padding: 50rpx 40rpx;
+  padding: 40rpx;
   display: flex;
   justify-content: space-between;
   background-color: #fff;

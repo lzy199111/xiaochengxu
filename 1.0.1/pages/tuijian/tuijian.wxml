@@ -1,0 +1,33 @@
+<view class="content">
+  <view class='tuijian-img'><image src='https://app.chainson-asset.com/Public/Uploads/resource/3.0/tuijian.jpg'></image></view>
+  <view class='tuijian-btn'><button type='default' open-type="share">立即推荐好友 送积分 >> </button></view>
+  <view class='tj-line'><image src='https://app.chainson-asset.com/Public/Uploads/resource/3.0/tj-line.png'></image></view>
+  <view class='tj-cont'>
+    <view class='tj-cont-tit'>我获得的奖励</view>
+    <view class='tj-message'>
+      <view class='tj-mess-list'>
+        <view class='tj-list-name'>
+          <image class='tj-ps' src='../../images/myCl.png'></image>
+          <text>成功邀请的人数</text>
+        </view>
+        <view class='tj-sj'>{{num}}人</view>
+      </view>
+      <view class='tj-mess-list'>
+        <view class='tj-list-name'>
+          <image class='tj-ps01' src='../../images/tuijian.png'></image>
+          <text>已到账奖励</text>
+        </view>
+        <view class='tj-sj'>{{points}}积分</view>
+      </view>
+    </view>
+  </view>
+  <view class='guize'>
+    <view class='guize-tip'>活动规则</view>
+    <view class='guize-list'>
+      <text>1、点击“立即推荐好友注册”，分享给好友，好友在分享页面注册成功，获得积分奖励</text>
+     <text>2、您成功邀请好友通过您分享的页面首次预约后，顾问联系您付款成功后，您将获得积分奖励</text>
+     <text>3、奖励所得积分可用于乾晟资产平台兑换相应商品</text>
+     <text>4、该活动可重复参加，无次数上限</text>
+    </view>
+  </view>
+</view>

@@ -1,0 +1,49 @@
+<!--pages/baogao/baogao.wxml-->
+<view class='container'>
+  <swiper class='swiper' vertical="true" current='{{current}}' data-current='{{current}}' bindchange="bindChange">
+    <swiper-item>
+      <view class='cont-list'>
+        <view class='cont-theme'>风险承受能力调查问卷</view>
+        <view class='shuo'>
+          <text>您好，为了在投资理财方面更好的帮助到您</text>
+          <text>我们将对您的投资风格和风险承受</text>
+          <text>等方面进行一些了解</text>
+          <text>烦请您能根据自己的真实情况进行选择；</text>
+          <text>我们承诺您的这些资料将会严格保密</text>
+          <text>敬请放心</text>
+        </view>
+        <view class='begin' bindtap='begin'>点击开始</view>
+        <view class='tip'>
+          <text>温馨提示</text>
+          <text>多一分谨慎，少一分风险</text>
+          <text>多一分了解，少一分损失</text>
+        </view>
+      </view>
+    </swiper-item>
+    <block wx:for="{{pogation}}" wx:key="{{key}}">
+      <swiper-item>
+          <view class='cont-theme'>风险承受能力调查问卷</view>
+          <view class='item-top'>
+            <view class='theme'>{{item.id}}、{{item.theme}}</view>
+            <radio-group data-curt="{{item.id}}" class="radio-group" bindchange="radioChange">
+              <label class="radio" wx:for="{{item.station}}" wx:key="{{key}}">
+                <radio value="{{item.value}}" /><text>{{item.name}}</text>
+              </label>
+            </radio-group>
+            <view class='navBtn'>
+              <button class='previous' bindtap='previous'>上一题</button>
+              <button class='Next' bindtap='next'>下一题</button>
+            </view>
+          </view>
+          <image class='dong' src='../../images/gt.png'></image>
+      </swiper-item>
+    </block>
+    <swiper-item>
+      <view class='result-them'>经评估您的风险等级为</view>
+      <view class='result'><image src='{{srcImg}}'></image></view>
+      <view class='fen'>以上问题的总分为100分，根据您所选择的问题答案，您对投资风险的整体承受程度和风险偏好总得分为:{{fen}}分</view>
+      <view class='leixing'>适合您的产品为：{{leixing}}</view>
+    
+    </swiper-item> 
+  </swiper>
+</view>

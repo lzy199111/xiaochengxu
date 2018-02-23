@@ -1,0 +1,5 @@
+<!--pages/view/view.wxml-->
+<view class='container'>
+<web-view src="{{srcUrl}}"></web-view>
+</view>
+

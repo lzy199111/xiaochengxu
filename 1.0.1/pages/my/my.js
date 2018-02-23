@@ -86,6 +86,7 @@ Page({
   // 设置
   set:function(){
     var value = wx.getStorageSync('user')
+    var name=this.data.message.name
     if (value==""){
       wx.showToast({
         title: '请点击登录',
@@ -94,7 +95,7 @@ Page({
       })
     }else{
       wx.navigateTo({
-        url: '../set/set',
+        url: '../set/set?name=' + name+'&value='+value,
       })
     }
     
@@ -146,6 +147,12 @@ Page({
   onPullDownRefresh: function () {
     this.onLoad()
     wx.stopPullDownRefresh()
+  },
+  guwen:function(e){   
+    var adviser_id = e.currentTarget.dataset.adviser
+    wx.navigateTo({
+      url: '../lics-detail/lics-detail?id=' + adviser_id,
+    })
   }
 
 })

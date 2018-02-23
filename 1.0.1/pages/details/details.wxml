@@ -25,7 +25,6 @@
     <view class="swiper-tab">  
       <view class="swiper-tab-list {{currentTab==0 ? 'on' : ''}}" data-current="0" bindtap="swichNav">基本信息</view>  
       <view class="swiper-tab-list {{currentTab==1 ? 'on' : ''}}" data-current="1" bindtap="swichNav">募集账号</view>
-      <view class="swiper-tab-list {{currentTab==2 ? 'on' : ''}}" data-current="2" bindtap="swichNav">产品公告</view> 
     </view>  
     <swiper current="{{currentTab}}" class="swiper-box" duration="300" bindchange="bindChange" style="height: {{clientHeight?clientHeight+'px':'auto'}}">  
         <swiper-item>
@@ -125,9 +124,6 @@
               </view>
             </view>
           </view>   
-        </swiper-item> 
-        <swiper-item>  
-          <view class="classname">无</view>   
         </swiper-item>   
     </swiper>
     <!--底部按钮  -->

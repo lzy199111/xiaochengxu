@@ -1,7 +1,7 @@
 // pages/lics/lics.js
 var citys=require('../../utils/util.js')//获取城市数据
 var chengshis=citys.city
-var res=[]
+var res = []
 var areas=[]
 for (var index in chengshis) {
   res.push(chengshis[index].name) //建立城市名数组
@@ -17,7 +17,7 @@ Page({
     indPro: 0,  //城市数组index
     indArea: 0,  //地区数组index
     array: ['不限','男','女',], //性别数组
-    provinces:res,     //城市数组
+    provinces: res,     //城市数组
     arealist:areas,    //区域数组
     city:"常住省",      //省市input的value
     area:"常驻城市",    //区域input的value
@@ -50,6 +50,9 @@ Page({
         },
       })
   },
+  onShow:function(){
+this.onLoad()
+  },
   sexSet: function(e) {
     this.setData({
       index: e.detail.value
@@ -64,6 +67,7 @@ Page({
     })
     this.setData({
       city: this.data.provinces[this.data.indPro],
+      area:"常驻城市",
       areaArray: this.data.arealist[this.data.indPro]
     })
   },
@@ -108,7 +112,6 @@ Page({
   onPullDownRefresh: function () {
     this.onLoad()
     wx.stopPullDownRefresh()
-  }
-
+  },
   
 })

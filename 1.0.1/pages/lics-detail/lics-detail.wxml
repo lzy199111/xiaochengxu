@@ -20,10 +20,10 @@
         <text>性别：</text>
         <text>{{lics.sex}}</text>
       </view>
-      <!-- <view class="archives-list">
+       <view class="archives-list">
         <text>年龄：</text>
         <text>{{lics.age}}</text>
-      </view> -->
+      </view> 
       <view class="archives-list">
         <text>管理资产：</text>
         <text>{{lics.zichan}}</text>
@@ -31,6 +31,22 @@
       <view class="archives-list">
         <text>服务客户：</text>
         <text>{{lics.kehu}}</text>
+      </view>
+      <view class="archives-list">
+        <text>从业年限：</text>
+        <text>{{lics.nianxian}}</text>
+      </view>
+      <view class="archives-list">
+        <text>电子邮箱：</text>
+        <text>{{lics.email}}</text>
+      </view>
+      <view class="archives-list">
+        <text>擅长领域：</text>
+        <text>{{lics.lingyuy}}</text>
+      </view>
+      <view class="archives-list">
+        <text>公司地址：</text>
+        <text>{{lics.address}}</text>
       </view>
       <view class="archives-list">
         <text class='clickHe' data-telphone="{{lics.telphone}}" bindtap='call'>点击联系他</text>  

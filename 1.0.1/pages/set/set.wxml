@@ -1,16 +1,16 @@
 <!--pages/set/set.wxml-->
 <view class="container">
   <view class="set">
+    <view class="set-list">
+      <text>姓名</text>
+      <text>{{name}}</text>
+    </view>
+    <view class="set-list">
+      <text>手机号</text>
+      <text>{{value}}</text>
+    </view>
     <view class="set-list" bindtap="revise">
-      <text>修改登录密码</text>
-      <text> > </text>
-    </view>
-    <view class="set-list" bindtap="fankui">
-      <text>意见反馈</text>
-      <text> > </text>
-    </view>
-    <view class="set-list" bindtap='tuijian'>
-      <text>推荐好友</text>
+      <text>修改密码</text>
       <text> > </text>
     </view>
   </view>

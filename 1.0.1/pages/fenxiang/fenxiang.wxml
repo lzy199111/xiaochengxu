@@ -1,0 +1,33 @@
+<!--pages/fenxiang/fenxiang.wxml-->
+<view class="container">
+            <view class="top-img"><image src="https://app.chainson-asset.com/Public/Uploads/resource/3.0/top.jpg" alt=""/></view>
+            <view class="inputBox">
+                <view class='h4'>新用户专享</view>
+                <view>注册送积分</view>
+                <view class="inputInner">
+                    <input class="zcInp" type="number" placeholder="输入手机号码" bindinput='phoneInputReg'/>
+                    <view class="lineCent">
+                        <view class="yanzheng"><input type="number" placeholder="输入验证码" bindinput='jiaoyanInput' /></view>
+                        <text class="huode" bindtap='jiaoyan'>{{yanzheng}}</text>
+                    </view>
+                    <input class="zcInp" type="password" placeholder="输入注册密码" bindinput='passwordInput'/>
+                    <button class="btn" type='default' bindtap='click'>点击领取</button>  
+                </view>
+            </view>
+            <view class="companyDec">
+               <view class="theme">公司简介</view>
+               <view class="descCont">
+                   <text>乾晟（杭州）资产管理有限公司总部位于杭州，是冶建控股旗下一家政府重点培养的创新型综合金融服务管理机构。致力于为客户提供完备的资产配置解决方案，专注于私募投资、债权投资、证券投资、投融资顾问，资产管理等金融业务。</text>
+                   <text>乾晟的控股母公司——冶建控股，是以中冶集团旗下中冶城投为主要控股方。</text>
+                   <text>中冶城投为原冶金工业部旗下北京中冶投资有限公司为顺应国家政策积极参与大型央企和大型国有企业的混合所有制改革而成立的综合性企业。控股股东为北京中冶投资有限公司，实际控制人为国务院国资委。</text>
+               </view>   
+            </view>
+            <view class="companyDec">
+                <view class="theme">精英顾问</view>
+                <view class="title">精英顾问：一对一服务！</view>
+                <view class="descCont">
+                    <text>通过App免费预约我们专业的精英顾问来为您解决投资方面的问题。顾问将根据您的资产情况为您量身定制属于自己的理财方案，全程一对一服务。</text>
+                </view>
+                <image class="jing-img" src="https://app.chainson-asset.com/Public/Uploads/resource/3.0/jing.jpg" alt=""/>
+            </view>
+</view>

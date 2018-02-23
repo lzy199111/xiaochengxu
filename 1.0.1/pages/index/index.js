@@ -18,6 +18,7 @@ Page({
     duration:1000,
     circular:'true',
     imgUrls:[],
+    captilUrl:[],
     product:{},
     news:{
       bannerSrc:"https://app.chainson-asset.com/Public/Uploads/resource/3.0/news.jpg",
@@ -81,10 +82,10 @@ Page({
       {
         params: bannerData,
         success: function (res) {
-          console.log(res)
           wx.hideLoading()
           that.setData({
-            imgUrls: res.data.banner.image
+            imgUrls: res.data.banner.image,
+            captilUrl:res.data.banner.url
           })
         },
         fail: function () {
@@ -102,23 +103,43 @@ Page({
   },
   // 推荐有礼
   tuijian:function(){
-    wx.showToast({
-      title: '敬请期待',
-      icon: 'loading',
-    })
-    setTimeout(function () {
-      wx.hideToast()
-    }, 2000)
+    var value = wx.getStorageSync('user')
+    if (value == "") {
+      wx.showToast({
+        title: '需要先登录',
+        icon: 'loading',
+        duration: 1500
+      })
+      setTimeout(function () {
+        wx.navigateTo({
+          url: '../login/login',
+        })
+      }, 1500)
+    } else {
+      wx.navigateTo({
+        url: '../tuijian/tuijian',
+      })
+    }
 
   },
   caifu:function(){
-    wx.showToast({
-      title: '敬请期待',
-      icon: 'loading',
-    })
-    setTimeout(function () {
-      wx.hideToast()
-    }, 2000)
+    var value = wx.getStorageSync('user')
+    if (value == "") {
+      wx.showToast({
+        title: '需要先登录',
+        icon: 'loading',
+        duration: 1500
+      })
+      setTimeout(function () {
+        wx.navigateTo({
+          url: '../login/login',
+        })
+      }, 1500)
+    } else {
+      wx.navigateTo({
+        url: '../baogao/baogao',
+      })
+    } 
   },
   // 全国布局
   buju:function(){
@@ -169,10 +190,14 @@ Page({
     this.onLoad()
     wx.stopPullDownRefresh()
   },
-  imgLook:function(){
-    wx.navigateTo({
-      url: '../view/view',
-    })
+  imgLook:function(e){
+    var url = e.currentTarget.dataset.cururl
+    if(url!=''){
+      wx.navigateTo({
+        url: '../view/view?url=' + url,
+      })
+    }
+    
   }
 
 

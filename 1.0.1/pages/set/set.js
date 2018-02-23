@@ -5,32 +5,24 @@ Page({
    * 页面的初始数据
    */
   data: {
-  
+    name:'',
+    value:''
   },
 
   /**
    * 生命周期函数--监听页面加载
    */
   onLoad: function (options) {
-  
-  },
-  fankui:function(){
-    wx.navigateTo({
-      url: '../../pages/fankui/fankui',
+    this.setData({
+      name: options.name,
+      value: options.value
+
     })
   },
   // 重置密码
   revise:function(){
     wx.navigateTo({
       url: '../../pages/revise/revise',
-    })
-  },
-  // 推荐好友
-  tuijian:function(){
-    wx.showToast({
-      title: '敬请期待',
-      icon:'loading',
-      duration:2000
     })
   },
   out:function(){

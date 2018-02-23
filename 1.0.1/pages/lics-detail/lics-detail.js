@@ -27,6 +27,7 @@ Page({
       {
         params: adviserDetails,
         success: function (res) {
+          console.log(res)
           wx.hideLoading()
           that.setData({
             lics: res.data.adviser,

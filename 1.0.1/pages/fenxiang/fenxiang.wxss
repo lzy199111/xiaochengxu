@@ -1,0 +1,107 @@
+/* pages/fenxiang/fenxiang.wxss */
+.top-img {
+  width: 100%;
+}
+.top-img image{
+	width: 100%;
+}
+.inputBox{
+	width: 90%;
+	position: relative;
+	z-index: 10;
+	padding: 20px 0px;
+	margin: -20px auto 0;
+	background-color: #5a88ed;
+	text-align: center;
+	color: #fff;
+}
+.inputBox .h4{
+  font-size: 12px;
+}
+.inputInner{
+  display: flex;
+  flex-direction: column;
+	width: 70%;
+	margin:30rpx auto 0;
+}
+.zcInp{
+	width: 100%;
+  color: #333;
+  background-color: #fff;
+	height: 32px;
+	border: none;
+	font-size: 14px;
+  text-align: left;
+  padding-left: 10px;
+  box-sizing: border-box;
+}
+.lineCent{
+	display: flex;
+  justify-content: space-between;
+	width: 100%;
+	height: 32px;
+	margin: 10px 0px;
+}
+.btn{
+	width: 100%;
+	height: 32px;
+  line-height: 32px;
+	border: none;
+	margin-top: 10px;
+	background-color: #fff;
+	border-radius: 5px;
+}
+.yanzheng{
+  width: 55%;
+}
+.yanzheng input{
+	width: 100%;
+	height: 32px;
+  font-size: 14px;
+	border: none;
+  color: #333;
+  background-color: #fff;
+	padding-left: 10px;
+  box-sizing: border-box;
+  text-align: left;
+}
+.huode{
+	font-size: 14px;
+	color: #333;
+	background-color: #fff;
+	height: 32px;
+	line-height: 32px;
+	width: 43%;
+}
+.companyDec{
+	margin: 40rpx 0px;
+  background-color: #fff;
+}
+.theme{
+	height: 96rpx;
+	line-height: 96rpx;
+	font-size: 20px;
+	color: #fff;
+	text-align: center;
+	background-color: #5786ee
+}
+.descCont{
+	padding: 30rpx 20rpx 0;
+  background-color: #fff;
+}
+.descCont text{
+	line-height: 24rpx;
+	color: #333;
+	font-size: 14px;
+	text-indent: 28px;
+}
+.title{
+	font-size: 16px;
+	text-align: center;
+	margin-top: 10px;
+}
+.jing-img{
+	display: block;
+	width: 90%;
+	margin: 0 auto
+}

@@ -3,8 +3,8 @@
 <view class="container">
   <swiper autoplay="{{autoplay}}" interval="{{interval}}" duration="{{duration}}" circular="{{circular}}" id="swiper">
     <block wx:for="{{imgUrls}}" wx:key="key">
-      <swiper-item class="swiper-top">
-        <image src="{{item}}" class="slide-image" bindtap='imgLook'/> 
+      <swiper-item class="swiper-top" data-cururl="{{captilUrl[index]}}" bindtap='imgLook'>
+        <image src="{{item}}" class="slide-image" /> 
       </swiper-item>
     </block>
   </swiper>

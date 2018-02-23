@@ -10,12 +10,12 @@
         </picker>
         <image class="select" src="../../images/select.png"></image>
       </view>
-      <view class="section">
+        <view class="section">
         <picker mode="selector" value="{{indPro}}" bindchange="cityChange" range="{{provinces}}">
           <view class="sexInpt">{{city}}</view>
         </picker>
         <image class="select" src="../../images/select.png"></image>
-      </view>
+      </view>  
       <view class="section">
         <picker mode="selector" value="{{indArea}}" bindchange="areaChange" range="{{areaArray}}">
           <view class="sexInpt">{{area}}</view>
